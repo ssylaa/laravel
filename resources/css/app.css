@@ -1,0 +1,41 @@
+/* app.css - Gaya dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.red { color: red; }
+.orange { color: orange; }
+.yellow { color: yellow; }
+.green { color: green; }
+.blue { color: blue; }
+.indigo { color: indigo; }
+.violet { color: violet; }

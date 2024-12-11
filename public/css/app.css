@@ -1,0 +1,102 @@
+/* app.css - Gaya dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* app.css - Gaya dasar */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tombol dalam tabel */
+table td button, table td .btn {
+    font-size: 0.6rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+
+/* Khusus untuk tampilan mobile */
+@media (max-width: 768px) {
+    table th, table td {
+        padding: 1rem; /* Padding lebih kecil untuk mobile */
+    }
+
+    table td, table th {
+        font-size: 0.8rem; /* Mengecilkan ukuran teks untuk tampilan mobile */
+    }
+
+    /* Lebar kolom yang lebih baik di mobile */
+    th:nth-child(1), td:nth-child(1) { width: 15%; }
+    th:nth-child(2), td:nth-child(2) { width: 30%; }
+    th:nth-child(3), td:nth-child(3) { width: 20%; }
+    th:nth-child(4), td:nth-child(4) { width: 20%; }
+    th:nth-child(5), td:nth-child(5) { width: 15%; } /* Lebar kolom untuk tombol */
+
+    /* Tombol Edit dan Delete dalam tabel */
+    table td .btn {
+        margin-bottom: 8px;  /* Tambahkan jarak antara tombol */
+        display: inline-block; /* Pastikan tombol tetap muncul */
+        width: auto; /* Pastikan lebar tombol tidak terlalu besar */
+    }
+
+    /* Jika tombol terlalu kecil atau tersembunyi, buat kolom tombol lebih lebar */
+    table td:last-child {
+        width: 100px; /* Tentukan lebar kolom tombol agar cukup untuk tombol */
+    }
+
+    
+}
